@@ -5,6 +5,7 @@ import { services } from "../constatnts";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../style";
 import { fadeIn, textVariant } from "../utils/motion";
+import { overview } from "../constatnts";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -39,16 +40,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Dedicated computer security expert with over a decade of experience
-        safeguarding digital assets and infrastructure. Specializing in
-        penetration testing, vulnerability assessment, and implementing robust
-        security protocols. Proven track record of identifying and mitigating
-        cyber threats for Fortune 500 companies and government agencies.
-        Certified in CISSP and CEH, with a master's degree in Cybersecurity.
-        Passionate about staying ahead of emerging threats and educating
-        organizations on best security practices. Committed to creating
-        resilient digital environments and protecting sensitive information in
-        an ever-evolving threat landscape.
+        {overview.overview}
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

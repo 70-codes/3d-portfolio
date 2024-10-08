@@ -8,12 +8,10 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
@@ -22,7 +20,9 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  kali,
+  metasploit,
+  wireshark,
 } from "../assets";
 
 export const navLinks = [
@@ -81,8 +81,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Kali Linux",
+    icon: kali,
   },
   {
     name: "Tailwind CSS",
@@ -97,22 +97,37 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Metasploit",
+    icon: metasploit,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Wireshark",
+    icon: wireshark,
   },
   {
     name: "docker",
     icon: docker,
   },
 ];
+
+const overview = {
+  title: "Overview",
+  overview: `
+  The following projects I have completed showcase my expertise in developing
+  and implementing innovative solutions across various technologies. From building
+  a comprehensive user management system with FastAPI and SQLAlchemy to designing
+  interactive React components for a dynamic portfolio website, my work demonstrates
+  a strong proficiency in both frontend and backend development. Each project
+  highlights my ability to create robust, user-friendly applications, integrate
+  advanced features, and deliver high-quality results. These experiences reflect
+  my commitment to leveraging modern technologies to solve complex problems and
+  enhance user experiences.
+  `,
+};
 
 const experiences = [
   {
@@ -129,21 +144,22 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "ICT Tutor",
+    company_name: "The King David School",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Teaching young kids how to interact with technological devices.",
+      "Collabaration with the school administration to run IT contests within the school.",
+      "Developed and managed different computer systems and other digital devices in the school.",
+      "Created and managed different documentation in the school.",
+      "Enabled the school have a smooth transition from manual to digital devices to enhance perfomance and accuracy.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Freelancer",
+    company_name: "Smart Writers LTD",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
@@ -155,46 +171,58 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Cyber Security Professional",
+    company_name: "Freelance",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining computer systems using various security software and hardware tools such as firewalls and IDS.",
+      "Creation and Implementation of different network configurations such as VPN, on routers, switches and end devices.",
+      "Use of Linux OS and wireshark tools to assess vulnerabilities with computer systems.",
+      "Participating in different hackathons to gain insight and knowledge from peers.",
     ],
   },
 ];
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+    testimonial: "To be included....",
+    name: "N/A",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+    testimonial: "To be included....",
+    name: "N/A",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+    testimonial: "To be included...",
+    name: "N/A",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
+
+const projectsOverview = {
+  title: "Projects",
+  overview: `
+  The following projects I have completed showcase my expertise in developing
+   and implementing innovative solutions across various technologies. From
+   building a comprehensive user management system with FastAPI and SQLAlchemy
+   to designing interactive React components for a dynamic portfolio website,
+   my work demonstrates a strong proficiency in both frontend and backend
+   development. Each project highlights my ability to create robust, 
+   user-friendly applications, integrate advanced features, and deliver 
+   high-quality results. These experiences reflect my commitment to leveraging
+   modern technologies to solve complex problems and enhance user experiences.
+  `,
+};
 
 const projects = [
   {
@@ -262,4 +290,12 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  overview,
+  projectsOverview,
+};

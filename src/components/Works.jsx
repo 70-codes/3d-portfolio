@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -6,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constatnts";
 import { fadeIn, textVariant } from "../utils/motion";
+import { projectsOverview } from "../constatnts";
 
 const ProjectCard = ({
   index,
@@ -71,16 +73,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          The following projects I have completed showcase my expertise in
-          developing and implementing innovative solutions across various
-          technologies. From building a comprehensive user management system
-          with FastAPI and SQLAlchemy to designing interactive React components
-          for a dynamic portfolio website, my work demonstrates a strong
-          proficiency in both frontend and backend development. Each project
-          highlights my ability to create robust, user-friendly applications,
-          integrate advanced features, and deliver high-quality results. These
-          experiences reflect my commitment to leveraging modern technologies to
-          solve complex problems and enhance user experiences.
+          {projectsOverview.overview}
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

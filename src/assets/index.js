@@ -20,6 +20,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import kali from "./tech/kali.png";
+import metasploit from "./tech/metasploit.jpg";
+import wireshark from "./tech/wireshark.jpg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -59,4 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  kali,
+  metasploit,
+  wireshark,
 };
